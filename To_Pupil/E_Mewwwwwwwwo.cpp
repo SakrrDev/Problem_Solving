@@ -16,7 +16,7 @@ void SakrDev() {
 
     for(int i = 0 ; i < n; i++)
         cin >> arr[i];
-
+    
 
     int max_count = 0;
     int count = 0;
