@@ -10,7 +10,20 @@ void FastIO() {
 }
 
 void SakrDev() {
-    
+    string s; cin >> s;
+
+    int size = s.length();
+    if (size > 10){
+        int counter = 0;
+        for (int i = 1; i < size - 1; i++){
+            counter++;
+        }
+
+        cout << s[0] << counter << s[size - 1] << endl;
+    } else {
+        cout << s << endl;
+    }
+
 }
 
 /*
@@ -21,6 +34,6 @@ signed main() {
     // UseFile();
     FastIO();
     int t = 1;
-    // cin >> t;
+    cin >> t;
     while (t--) SakrDev();
 }
