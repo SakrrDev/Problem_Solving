@@ -57,7 +57,9 @@ template<typename T> T power(T base, T exp, T mod = MOD) {
 
 void SakrDev(void) {
   
+    int number; cin >> number;
     
+    cout << 25 << endl;
 }
 
 int main() {

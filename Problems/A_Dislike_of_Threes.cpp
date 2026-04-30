@@ -56,15 +56,25 @@ template<typename T> T power(T base, T exp, T mod = MOD) {
 }
 
 void SakrDev(void) {
-  
-    
+   		int k; cin >> k;
+
+		for (int i = 1; ; i++)
+		{
+			if (i % 3 == 0 || i % 10 == 3)
+				continue;
+			if (--k == 0)
+			{
+				cout << i << '\n';
+				break;
+			}
+		}
 }
 
 int main() {
     fast_io;
     
     int t = 1;
-    // cin >> t;
+    cin >> t;
     
     while(t--) {
         SakrDev();

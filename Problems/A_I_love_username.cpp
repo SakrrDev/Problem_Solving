@@ -57,6 +57,28 @@ template<typename T> T power(T base, T exp, T mod = MOD) {
 
 void SakrDev(void) {
   
+    int n; cin >> n;
+    vi v(n);
+
+    for (int i = 0; i < n; i++){
+        cin >> v[i];
+    }
+
+    int counter = 0;
+    int max_count = v[0];
+    int min_count = v[0];
+
+    for (int i = 0; i < n; i++){
+        if (v[i] > max_count){
+            counter++;
+            max_count = v[i];
+        } else if (v[i] < min_count){
+            counter++;
+            min_count = v[i];
+        }
+    }
+
+    cout << counter << endl;
     
 }
 
